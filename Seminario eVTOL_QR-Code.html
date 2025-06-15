@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminário: Eve Air Mobility - O Futuro da Mobilidade Urbana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Seção do QR Code -->
+    <div id="qrcode-section" class="fixed inset-0 bg-gray-900 bg-opacity-95 z-50 flex flex-col justify-center items-center text-center p-6">
+        <h2 class="text-3xl font-bold text-white mb-4">Acompanhe a Apresentação no seu Celular</h2>
+        <p class="text-lg text-gray-300 mb-8">Aponte a câmera do seu celular para o código abaixo.</p>
+        <div class="bg-white p-4 rounded-lg">
+             <!-- IMPORTANTE: Substitua 'URL_DA_SUA_APRESENTACAO' pelo link real da sua página -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=URL_DA_SUA_APRESENTACAO" alt="QR Code para a apresentação">
+        </div>
+        <p class="text-sm text-gray-400 mt-4">Nota: O QR Code precisa do link final da apresentação para funcionar.</p>
+        <button id="start-presentation-btn" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-lg">
+            Iniciar Apresentação
+        </button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <!-- Header de Navegação -->
+        <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
+            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <h1 class="text-xl font-bold text-blue-800">Eve Air Mobility</h1>
+                <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#contexto" class="text-gray-600 hover:text-blue-700 transition">Contexto</a>
+                    <a href="#solucao" class="text-gray-600 hover:text-blue-700 transition">A Solução</a>
+                    <a href="#o-que-e-evtol" class="text-gray-600 hover:text-blue-700 transition">O que é eVTOL</a>
+                    <a href="#tecnologia-eve" class="text-gray-600 hover:text-blue-700 transition">Tecnologia Eve</a>
+                    <a href="#ecossistema" class="text-gray-600 hover:text-blue-700 transition">Ecossistema</a>
+                    <a href="#desafios" class="text-gray-600 hover:text-blue-700 transition">Desafios</a>
+                    <a href="#tecnologias-dia-a-dia" class="text-gray-600 hover:text-blue-700 transition">Tecnologias</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Seção Hero -->
+            <section class="hero-section text-white h-[80vh] flex flex-col justify-center items-center text-center p-6">
+                <div class="max-w-4xl">
+                    <p class="text-lg md:text-xl text-blue-200 font-semibold">Seminário Acadêmico: Indústria da Aviação no Brasil</p>
+                    <h2 class="text-4xl md:text-6xl font-extrabold my-4">Eve Air Mobility e o Futuro da Mobilidade Aérea Urbana</h2>
+                    <p class="text-lg md:text-xl text-gray-300 mt-4">Uma análise sobre a tecnologia, o modelo de negócio e os desafios na criação de um novo paradigma para o transporte urbano.</p>
+                </div>
+            </section>
+
+            <!-- Container Principal -->
+            <div class="container mx-auto px-6 py-12 md:py-20">
+
+                <!-- Contexto: O Desafio da Mobilidade Urbana -->
+                <section id="contexto" class="scroll-mt-20 mb-20">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">O Desafio da Mobilidade Urbana</h3>
+                    <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">As cidades modernas enfrentam uma crise de mobilidade, marcada por três problemas centrais que exigem soluções inovadoras.</p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-red-500">
+                            <h4 class="font-bold text-xl mb-2">Congestionamento Crônico</h4>
+                            <p>Perdas econômicas e de tempo significativas devido ao trânsito intenso, afetando a produtividade e a qualidade de vida.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500">
+                            <h4 class="font-bold text-xl mb-2">Impacto Ambiental</h4>
+                            <p>A dependência de combustíveis fósseis contribui para a poluição do ar e as emissões de gases de efeito estufa.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-500">
+                            <h4 class="font-bold text-xl mb-2">Poluição Sonora</h4>
+                            <p>O ruído constante do tráfego afeta a saúde física e mental da população urbana, diminuindo o bem-estar geral.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- A Solução: Eve Air Mobility -->
+                <section id="solucao" class="scroll-mt-20 mb-20 bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                    <div class="flex flex-col md:flex-row items-center gap-12">
+                        <div class="md:w-1/2">
+                            <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Apresentando a Eve: Uma Solução Integrada</h3>
+                            <div class="text-lg space-y-4 text-gray-700">
+                                <p>Nascida da <strong class="text-gray-900">Embraer</strong>, uma líder aeroespacial global, a Eve não visa apenas construir uma aeronave, mas sim desenvolver um <strong class="text-gray-900">ecossistema completo</strong> para a Mobilidade Aérea Urbana (UAM), propondo uma nova camada para o transporte nas cidades.</p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://www.eveairmobility.com/storage/2024/08/DLM_7027-scaled.jpg" 
+                             alt="[Imagem de executivos da Eve Air Mobility num evento]" 
+                             class="rounded-lg shadow-md w-full h-auto object-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/4a5568?text=Equipe+Eve';">
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- O que é eVTOL -->
+                <section id="o-que-e-evtol" class="scroll-mt-20 mb-20">
+                    <div class="text-center">
+                        <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Desmistificando os eVTOLs</h3>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                            eVTOL é a sigla para Aeronave Elétrica de Decolagem e Pouso Vertical. Trata-se de uma nova geração de aeronaves que combina a agilidade de um helicóptero com a eficiência e o baixo ruído de um avião elétrico.
+                        </p>
+                    </div>
+                    <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h4 class="font-bold text-xl text-blue-700 mb-2">100% Elétrico</h4>
+                            <p>Movidos a baterias, não emitem poluentes e são significativamente mais silenciosos.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h4 class="font-bold text-xl text-blue-700 mb-2">Voo Vertical</h4>
+                            <p>Decolam e pousam como helicópteros, permitindo operações em áreas urbanas densas sem a necessidade de pistas longas.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow-md">
+                            <h4 class="font-bold text-xl text-blue-700 mb-2">Voo Eficiente</h4>
+                            <p>Após a decolagem, fazem a transição para um voo horizontal apoiado por asas, tornando-se mais eficientes para cobrir distâncias.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- A Tecnologia: A Aeronave eVTOL da Eve -->
+                <section id="tecnologia-eve" class="scroll-mt-20 mb-20">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">A Tecnologia do eVTOL da Eve</h3>
+                    <div class="flex flex-col-reverse md:flex-row items-center gap-12 bg-gray-800 text-white p-8 md:p-12 rounded-xl shadow-lg">
+                        <div class="md:w-1/2">
+                            <img src="https://mundogeo.com/wp-content/uploads/2024/05/08125213/evtol-eve-prototipo-divulgacao.jpg" 
+                             alt="[Imagem do protótipo do eVTOL da Eve em escala real]" 
+                             class="rounded-lg shadow-xl w-full h-auto"
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/4a5568?text=eVTOL+da+Eve';">
+                        </div>
+                        <div class="md:w-1/2 space-y-4">
+                            <h4 class="text-2xl font-bold text-blue-300">Design Focado em Eficiência e Segurança</h4>
+                            <ul class="space-y-3 text-lg">
+                                <li><strong>&#8226; Propulsão 100% Elétrica:</strong> Zero emissões diretas de poluentes.</li>
+                                <li><strong>&#8226; Design Lift + Cruise:</strong> 8 rotores para voo vertical e asas fixas para cruzeiro, otimizando energia e segurança.</li>
+                                <li><strong>&#8226; Baixo Ruído:</strong> Perfil acústico significativamente inferior ao de helicópteros.</li>
+                                <li><strong>&#8226; Capacidade Ideal:</strong> 1 piloto e 4 passageiros, visando a viabilidade econômica das rotas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- O Ecossistema UAM -->
+                <section id="ecossistema" class="scroll-mt-20 mb-20 text-center">
+                    <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Mais que uma Aeronave: Um Ecossistema Completo</h3>
+                    <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">A estratégia da Eve se baseia em três pilares integrados para garantir a viabilidade e a escalabilidade da Mobilidade Aérea Urbana.</p>
+                     <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-xl shadow-md text-left">
+                            <h4 class="font-bold text-xl text-blue-700 mb-2">1. O eVTOL</h4>
+                            <p>O veículo elétrico de decolagem e pouso vertical que forma a base do sistema.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl shadow-md text-left">
+                            <h4 class="font-bold text-xl text-teal-700 mb-2">2. Serviços & Suporte</h4>
+                            <p>Rede global para manutenção, treinamento e operações, garantindo a segurança e disponibilidade da frota.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-xl shadow-md text-left">
+                            <h4 class="font-bold text-xl text-purple-700 mb-2">3. Gestão de Tráfego (UATM)</h4>
+                            <p>Software para orquestrar o tráfego aéreo urbano de forma segura e otimizada.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Desafios e Considerações Futuras -->
+                <section id="desafios" class="scroll-mt-20 mb-20 bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Desafios e Considerações Futuras</h3>
+                     <div class="grid md:grid-cols-2 gap-8 text-lg">
+                        <div>
+                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Certificação Regulatória</h4>
+                            <p class="text-gray-600">Obter aprovação de agências como ANAC, FAA e EASA é o marco mais crítico e complexo para o início das operações.</p>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Infraestrutura (Vertipontos)</h4>
+                            <p class="text-gray-600">A construção de locais para decolagem/pouso requer grandes investimentos e integração ao planejamento urbano.</p>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Aceitação Pública</h4>
+                            <p class="text-gray-600">Garantir a confiança da sociedade na segurança e nos benefícios do novo modal é crucial para sua adoção em massa.</p>
+                        </div>
+                         <div>
+                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Escalabilidade da Bateria</h4>
+                            <p class="text-gray-600">A evolução da densidade energética das baterias é determinante para aumentar o alcance e a viabilidade das aeronaves.</p>
+                        </div>
+                     </div>
+                </section>
+
+                <!-- Tecnologias do Dia a Dia -->
+                <section id="tecnologias-dia-a-dia" class="scroll-mt-20 mb-20">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">Tecnologias Impulsionadas pela Eve no Dia a Dia</h3>
+                    <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">A pesquisa para voos urbanos acelera inovações que transcendem a aviação, aprimorando tecnologias que já usamos ou que em breve farão parte da nossa rotina.</p>
+                    
+                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                        <h4 class="font-bold text-2xl text-blue-700 mb-6">1. Baterias e Gestão de Energia</h4>
+                        <div class="flex flex-col md:flex-row items-center gap-12">
+                            <div class="md:w-1/2 text-lg space-y-4 text-gray-700">
+                                 <div>
+                                    <h5 class="font-semibold text-xl text-gray-800 mb-2">Tecnologia Avançada</h5>
+                                    <p>Os eVTOLs utilizam baterias de <strong class="text-gray-900">íon-lítio de alta densidade</strong>, uma evolução das que temos em smartphones. Elas são projetadas para máxima potência e mínimo peso, requisitos essenciais para a aviação.</p>
+                                </div>
+                                <div class="mt-4">
+                                    <h5 class="font-semibold text-xl text-gray-800 mb-2">Ciclo de Vida Sustentável</h5>
+                                    <p>Para o descarte, as baterias primeiro têm uma <strong class="text-gray-900">"segunda vida"</strong> em aplicações menos exigentes, como armazenamento de energia solar. Depois, são <strong class="text-gray-900">recicladas</strong> para extrair materiais valiosos (lítio, cobalto), que retornam à produção, fechando o ciclo de forma sustentável.</p>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2">
+                                 <img src="https://img.odcdn.com.br/wp-content/uploads/2024/02/bateria-carro-eletrico-1024x576.jpg" 
+                                 alt="[Imagem de um pack de baterias de um veículo elétrico]" 
+                                 class="rounded-lg shadow-md w-full h-auto object-cover"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/4a5568?text=Bateria+EV';">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mt-8">
+                        <h4 class="font-bold text-2xl text-blue-700 mb-6">2. Impacto Ambiental e o Ciclo Completo</h4>
+                        <div class="text-lg space-y-4 text-gray-700">
+                            <p>A transição para a eletrificação é fundamental para um futuro sustentável, mas é crucial analisar o ciclo de vida completo da tecnologia para entender seu verdadeiro impacto ambiental.</p>
+                            <div class="mt-6 grid md:grid-cols-2 gap-8">
+                                <div>
+                                    <h5 class="font-semibold text-xl text-green-600 mb-2">Benefícios Ambientais</h5>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li><strong>Operação Limpa:</strong> eVTOLs e veículos elétricos não emitem CO2 ou outros poluentes durante o uso, melhorando a qualidade do ar nas cidades.</li>
+                                        <li><strong>Redução de Ruído:</strong> Motores elétricos são drasticamente mais silenciosos que motores a combustão, diminuindo a poluição sonora.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-xl text-red-600 mb-2">Desafios e Soluções</h5>
+                                    <ul class="list-disc list-inside space-y-2">
+                                        <li><strong>Mineração de Materiais:</strong> A extração de lítio e cobalto tem impactos ambientais e sociais. A solução passa por investir em <strong class="text-gray-900">inovações químicas</strong> com materiais mais abundantes e em <strong class="text-gray-900">reciclagem eficiente</strong>.</li>
+                                        <li><strong>Uso de Energia na Produção:</strong> A fabricação de baterias consome energia. Mitigar esse impacto requer o uso de <strong class="text-gray-900">fontes de energia renovável</strong> nas fábricas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mt-8">
+                        <h4 class="font-bold text-2xl text-blue-700 mb-6">3. Uma Possível Solução: Baterias de Sódio</h4>
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                            <div class="md:w-1/2">
+                                <img src="https://cdn.motor1.com/images/mgl/9o8B1/s3/le-batterie-agli-ioni-di-sodio-studiate-all-universita-di-warwick.webp" 
+                                 alt="[Imagem de células de bateria de íon de sódio]" 
+                                 class="rounded-lg shadow-md w-full h-auto object-cover"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/600x400/e2e8f0/4a5568?text=Bateria+de+Sódio';">
+                            </div>
+                            <div class="md:w-1/2 text-lg space-y-4 text-gray-700">
+                                 <p>Em resposta aos desafios do lítio, a indústria pesquisa ativamente as <strong class="text-gray-900">baterias de íon de sódio</strong> como uma alternativa promissora. O sódio é um dos elementos mais abundantes na Terra, o que reduz drasticamente os custos e os impactos da mineração.</p>
+                                 <ul class="list-disc list-inside space-y-2 mt-2">
+                                    <li><strong>Custo e Abundância:</strong> O sódio é significativamente mais barato e acessível que o lítio.</li>
+                                    <li><strong>Sustentabilidade:</strong> Reduz a dependência de materiais críticos e de mineração com alto impacto ambiental.</li>
+                                    <li><strong>Desafio Atual:</strong> Atualmente, possuem menor densidade energética (armazenam menos energia para o mesmo peso), um fator crítico para a aviação. Contudo, a pesquisa avança rapidamente para superar essa limitação.</li>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="bg-gray-800 text-white mt-16">
+            <div class="container mx-auto px-6 py-8 text-center">
+                <p>Seminário Acadêmico sobre Eve Air Mobility</p>
+                <p class="text-sm text-gray-400">Uma empresa Embraer.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById('start-presentation-btn').addEventListener('click', function() {
+            document.getElementById('qrcode-section').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
