@@ -24,15 +24,19 @@
     <!-- Seção do QR Code -->
     <div id="qrcode-section" class="fixed inset-0 bg-gray-900 bg-opacity-95 z-50 flex flex-col justify-center items-center text-center p-6">
         <h2 class="text-3xl font-bold text-white mb-4">Acompanhe a Apresentação no seu Celular</h2>
-        <p class="text-lg text-gray-300 mb-8">Aponte a câmera do seu celular para o código abaixo.</p>
+        <p class="text-lg text-gray-300 mb-8">Aponte a câmera do seu celular para o QR code abaixo.</p>
         <div class="bg-white p-4 rounded-lg">
-             <!-- IMPORTANTE: Substitua 'URL_DA_SUA_APRESENTACAO' pelo link real da sua página -->
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=URL_DA_SUA_APRESENTACAO" alt="QR Code para a apresentação">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://noiy-g.github.io/Seminario/" alt="QR Code para a apresentação">
         </div>
-        <p class="text-sm text-gray-400 mt-4">Nota: O QR Code precisa do link final da apresentação para funcionar.</p>
         <button id="start-presentation-btn" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-lg">
             Iniciar Apresentação
         </button>
+        <div class="mt-6 pt-6 border-t border-black-600">
+                    <h4 class="text-2xl md:text-1xl text-gray-300 font-extrabold my-4">Identificação do Grupo</h4>
+                    <p class="text-sm text-gray-300">Isadora Vergara Gonçalves</p>
+                    <p class="text-sm text-gray-300">Henry Ribeiro Tavares</p>
+                    <p class="text-sm text-gray-300">Bernardo Bosenbecker da Silva</p>
+                    <p class="text-sm text-gray-300">Gabriel Alexandre Barros Cardoso</p>
     </div>
 
     <div id="main-content" style="display: none;">
@@ -56,7 +60,7 @@
             <!-- Seção Hero -->
             <section class="hero-section text-white h-[80vh] flex flex-col justify-center items-center text-center p-6">
                 <div class="max-w-4xl">
-                    <p class="text-lg md:text-xl text-blue-200 font-semibold">Seminário Acadêmico: Indústria da Aviação no Brasil</p>
+                    <p class="C">Seminário Acadêmico: Indústria da Aviação no Brasil</p>
                     <h2 class="text-4xl md:text-6xl font-extrabold my-4">Eve Air Mobility e o Futuro da Mobilidade Aérea Urbana</h2>
                     <p class="text-lg md:text-xl text-gray-300 mt-4">Uma análise sobre a tecnologia, o modelo de negócio e os desafios na criação de um novo paradigma para o transporte urbano.</p>
                 </div>
@@ -272,6 +276,15 @@
             <div class="container mx-auto px-6 py-8 text-center">
                 <p>Seminário Acadêmico sobre Eve Air Mobility</p>
                 <p class="text-sm text-gray-400">Uma empresa Embraer.</p>
+                <div class="mt-6 pt-6 border-t border-gray-700">
+                    <h5 class="font-bold mb-2">Identificação do Grupo</h5>
+                    <p class="text-sm text-gray-300">Isadora Vergara Gonçalves</p>
+                    <p class="text-sm text-gray-300">Henry Ribeiro Tavares</p>
+                    <p class="text-sm text-gray-300">Bernardo Bosenbecker da Silva</p>
+                    <p class="text-sm text-gray-300">Gabriel Alexandre Barros Cardoso</p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-700">
+                <p class="text-sm text-gray-400">Desenvolvido por Gabriel Cardoso.</p>
             </div>
         </footer>
     </div>
