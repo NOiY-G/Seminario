@@ -13,7 +13,7 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-section {
-            background: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop');
+            background: linear-gradient(rgba(0, 21, 41, 0.7), rgba(0, 21, 41, 0.7)), url('https://embraer.bynder.com/m/4e9c52cc13c0cbd8/webimage-Wallpaper-Wednesday.png');
             background-size: cover;
             background-position: center;
         }
@@ -25,9 +25,11 @@
     <div id="qrcode-section" class="fixed inset-0 bg-gray-900 bg-opacity-95 z-50 flex flex-col justify-center items-center text-center p-6">
         <h2 class="text-3xl font-bold text-white mb-4">Acompanhe a Apresentação no seu Celular</h2>
         <p class="text-lg text-gray-300 mb-8">Aponte a câmera do seu celular para o QR Code abaixo.</p>
+        
         <div class="bg-white p-4 rounded-lg">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://noiy-g.github.io/Seminario/" alt="QR Code para a apresentação">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://noiy-g.github.io/Seminario/" alt="QR Code para a apresentação">
         </div>
+
         <button id="start-presentation-btn" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-lg">
             Iniciar Apresentação
         </button>
@@ -44,15 +46,17 @@
         <!-- Header de Navegação -->
         <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
             <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-                <h1 class="text-xl font-bold text-blue-800">Eve Air Mobility</h1>
+                <div class="flex items-center gap-4">
+                    <img src="https://wp.ufpel.edu.br/international/files/2021/10/logo_ufpel_cor-01-1-400x180.png" alt="Logótipo UFPel" class="h-10 w-auto">
+                    <h1 class="text-xl font-bold text-blue-800">Eve Air Mobility</h1>
+                </div>
                 <nav class="hidden md:flex space-x-6 text-sm font-medium">
                     <a href="#contexto" class="text-gray-600 hover:text-blue-700 transition">Contexto</a>
                     <a href="#solucao" class="text-gray-600 hover:text-blue-700 transition">A Solução</a>
-                    <a href="#o-que-e-evtol" class="text-gray-600 hover:text-blue-700 transition">O que é eVTOL</a>
                     <a href="#tecnologia-eve" class="text-gray-600 hover:text-blue-700 transition">Tecnologia Eve</a>
-                    <a href="#ecossistema" class="text-gray-600 hover:text-blue-700 transition">Ecossistema</a>
-                    <a href="#desafios" class="text-gray-600 hover:text-blue-700 transition">Desafios</a>
-                    <a href="#tecnologias-dia-a-dia" class="text-gray-600 hover:text-blue-700 transition">Tecnologias</a>
+                    <a href="#aprofundamento" class="text-gray-600 hover:text-blue-700 transition">Aprofundamento</a>
+                    <a href="#conclusoes" class="text-gray-600 hover:text-blue-700 transition">Conclusões</a>
+                    <a href="#referencias" class="text-gray-600 hover:text-blue-700 transition">Referências</a>
                 </nav>
             </div>
         </header>
@@ -61,8 +65,9 @@
             <!-- Seção Hero -->
             <section class="hero-section text-white h-[80vh] flex flex-col justify-center items-center text-center p-6">
                 <div class="max-w-4xl">
-                    <p class="text-lg md:text-2xl text-blue-200 font-semibold">Seminário: Indústria da Aviação no Brasil</p>
-                    <h2 class="text-4xl md:text-6xl font-extrabold my-4">Eve Air Mobility e o Futuro da Mobilidade Aérea Urbana</h2>
+                    <h2 class="text-xl md:text-xl font-extrabold my-4">UFPel, CEng, EE, Introdução à engenharia eletrônica Junho/2025 </h2>
+                    <p class="text-lg md:text-3xl text-blue-200 font-semibold">Indústria da Aviação no Brasil</p>
+                    <h2 class="text-5xl md:text-4xl font-extrabold my-4">Eve Air Mobility e o Futuro da Mobilidade Aérea Urbana</h2>
                     <p class="text-lg md:text-xl text-gray-300 mt-4">Uma análise sobre a tecnologia, o modelo de negócio e os desafios na criação de um novo paradigma para o transporte urbano.</p>
                 </div>
             </section>
@@ -112,7 +117,7 @@
                 <section id="o-que-e-evtol" class="scroll-mt-20 mb-20">
                     <div class="text-center">
                         <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Desmistificando os eVTOLs</h3>
-                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto">
                             eVTOL é a sigla para Aeronave Elétrica de Decolagem e Pouso Vertical. Trata-se de uma nova geração de aeronaves que combina a agilidade de um helicóptero com a eficiência e o baixo ruído de um avião elétrico.
                         </p>
                     </div>
@@ -197,9 +202,9 @@
                      </div>
                 </section>
 
-                <!-- Tecnologias do Dia a Dia -->
-                <section id="tecnologias-dia-a-dia" class="scroll-mt-20 mb-20">
-                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">Tecnologias Impulsionadas pela Eve no Dia a Dia</h3>
+                <!-- Ponto de Aprofundamento -->
+                <section id="aprofundamento" class="scroll-mt-20 mb-20">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">Ponto de Aprofundamento: Tecnologias de Bateria</h3>
                     <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">A pesquisa para voos urbanos acelera inovações que transcendem a aviação, aprimorando tecnologias que já usamos ou que em breve farão parte da nossa rotina.</p>
                     
                     <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
@@ -269,21 +274,37 @@
 
                 </section>
                 
+                <!-- Conclusões -->
+                <section id="conclusoes" class="scroll-mt-20 mb-20 bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Conclusões</h3>
+                    <div class="text-lg space-y-4 text-gray-700 max-w-4xl mx-auto">
+                        <p>A Eve Air Mobility, com o forte apoio da Embraer, destaca-se como uma das líderes na transformação do transporte aéreo nas cidades. O seu grande diferencial é pensar em tudo: não apenas na aeronave, mas em toda a operação, no suporte e na gestão do tráfego. Essa visão completa é a sua principal vantagem para superar os desafios do setor.</p>
+                        <p>O trabalho com os eVTOLs vai além de criar um novo meio de transporte. Ele impulsiona outras tecnologias, principalmente as de baterias. A preocupação com o meio ambiente é clara, seja no cuidado com o ciclo de vida das baterias de lítio ou na busca por novas opções, como as de sódio. Esse cuidado é fundamental para que o projeto seja bem-sucedido e aceite pelo público no futuro.</p>
+                        <p>Ainda existem grandes desafios pela frente, como as regras de voo, a criação dos locais de pouso e o avanço da tecnologia. Mesmo assim, o projeto da Eve mostra um caminho claro para um futuro onde o transporte nas cidades será mais rápido, com menos barulho e mais amigo do meio ambiente.</p>
+                    </div>
+                </section>
+
+                <!-- Referências -->
+                <section id="referencias" class="scroll-mt-20 mb-20">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Referências Bibliográficas</h3>
+                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg text-gray-700 text-sm max-w-4xl mx-auto space-y-3">
+                        <p>ATAÍDE, Márcio Rogério de. <strong>Baterias de íons-lítio</strong>: uma revisão sobre os processos de fabricação e os novos conceitos para o reuso e a reciclagem. 2021. Dissertação (Mestrado em Engenharia Mecânica) - Universidade Federal de Uberlândia, Uberlândia, 2021. Disponível em: <a href="https://www.proquest.com/openview/631bac60f1d2056c4729d5fe9783228a/1?pq-origsite=gscholar&cbl=2026366&diss=y" class="text-blue-600 hover:underline" target="_blank">https://www.proquest.com/openview/631bac60f1d2056c4729d5fe9783228a/1?pq-origsite=gscholar&cbl=2026366&diss=y</a>. Acesso em: 17 jun. 2025.</p>
+                        <p>EVE AIR MOBILITY. <a href="https://www.eveairmobility.com" class="text-blue-600 hover:underline" target="_blank">https://www.eveairmobility.com</a>. Acesso em: 17 jun. 2025.</p>
+                        <p>SANTOS, J. S. et al. Baterias de íons de sódio: uma alternativa às baterias de íons de lítio. In: <strong>Tecnologias de inovação e suas aplicações</strong>. Guarujá: Editora Scienza, 2021. p. 110-120. Disponível em: <a href="https://editorascienza.com.br/pdfs/pti/livro_tecnologias.pdf" class="text-blue-600 hover:underline" target="_blank">https://editorascienza.com.br/pdfs/pti/livro_tecnologias.pdf</a>. Acesso em: 17 jun. 2025.</p>
+                    </div>
+                </section>
+
             </div>
         </main>
 
         <!-- Rodapé -->
         <footer class="bg-gray-800 text-white mt-16">
             <div class="container mx-auto px-6 py-8 text-center">
-                <p>Seminário Acadêmico sobre Eve Air Mobility</p>
-                <p class="text-sm text-gray-400">Uma empresa Embraer.</p>
-                <div class="mt-6 pt-6 border-t border-gray-700">
-                    <h5 class="font-bold mb-2">Identificação do Grupo</h5>
-                    <p class="text-sm text-gray-300">Isadora Vergara Gonçalves</p>
-                    <p class="text-sm text-gray-300">Henry Ribeiro Tavares</p>
-                    <p class="text-sm text-gray-300">Bernardo Bosenbecker da Silva</p>
-                    <p class="text-sm text-gray-300">Gabriel Alexandre Barros Cardoso</p>
-                </div>
+                <h5 class="font-bold mb-2">Identificação do Grupo</h5>
+                <p class="text-sm text-gray-300">Isadora Vergara Gonçalves</p>
+                <p class="text-sm text-gray-300">Henry Ribeiro Tavares</p>
+                <p class="text-sm text-gray-300">Bernardo Bosenbecker da Silva</p>
+                <p class="text-sm text-gray-300">Gabriel Alexandre Barros Cardoso</p>
                 <div class="mt-4 pt-4 border-t border-gray-700">
                     <p class="text-sm text-gray-400">Desenvolvido por Gabriel Cardoso.</p>
                 </div>
