@@ -23,7 +23,7 @@
 
     <!-- Seção do QR Code -->
     <div id="qrcode-section" class="fixed inset-0 bg-gray-900 bg-opacity-95 z-50 flex flex-col justify-center items-center text-center p-6">
-        <h2 class="text-3xl font-bold text-white mb-4">Acompanhe a Apresentação no seu Celular</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Acompanhe a Apresentação</h2>
         <p class="text-lg text-gray-300 mb-8">Aponte a câmera do seu celular para o QR Code abaixo.</p>
         
         <div class="bg-white p-4 rounded-lg">
@@ -33,8 +33,8 @@
         <button id="start-presentation-btn" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-lg">
             Iniciar Apresentação
         </button>
-        <div class="mt-6 pt-6 border-t border-gray-700">
-            <h5 class="text-xl text-gray-300 font-bold mb-2">Identificação do Grupo</h5>
+        <div class="mt-6 pt-6 border-t border-gray-700 w-full max-w-xs">
+            <h5 class="text-lg text-gray-300 font-bold mb-2">Identificação do Grupo</h5>
             <p class="text-sm text-gray-400">Isadora Vergara Gonçalves</p>
             <p class="text-sm text-gray-400">Henry Ribeiro Tavares</p>
             <p class="text-sm text-gray-400">Bernardo Bosenbecker da Silva</p>
@@ -45,10 +45,10 @@
     <div id="main-content" style="display: none;">
         <!-- Header de Navegação -->
         <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-40">
-            <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-                <div class="flex items-center gap-4">
-                    <img src="https://wp.ufpel.edu.br/international/files/2021/10/logo_ufpel_cor-01-1-400x180.png" alt="Logótipo UFPel" class="h-10 w-auto">
-                    <h1 class="text-xl font-bold text-blue-800">Eve Air Mobility</h1>
+            <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <img src="https://wp.ufpel.edu.br/international/files/2021/10/logo_ufpel_cor-01-1-400x180.png" alt="Logótipo UFPel" class="h-8 sm:h-10 w-auto">
+                    <h1 class="text-lg sm:text-xl font-bold text-blue-800">Eve Air Mobility</h1>
                 </div>
                 <nav class="hidden md:flex space-x-6 text-sm font-medium">
                     <a href="#contexto" class="text-gray-600 hover:text-blue-700 transition">Contexto</a>
@@ -63,20 +63,19 @@
 
         <main>
             <!-- Seção Hero -->
-            <section class="hero-section text-white h-[80vh] flex flex-col justify-center items-center text-center p-6">
+            <section class="hero-section text-white h-[80vh] flex flex-col justify-center items-center text-center p-4">
                 <div class="max-w-4xl">
-                    <h2 class="text-xl md:text-xl font-extrabold my-4">UFPel, CEng, EE, Introdução à engenharia eletrônica Junho/2025 </h2>
-                    <p class="text-lg md:text-3xl text-blue-200 font-semibold">Indústria da Aviação no Brasil</p>
-                    <h2 class="text-5xl md:text-4xl font-extrabold my-4">Eve Air Mobility e o Futuro da Mobilidade Aérea Urbana</h2>
-                    <p class="text-lg md:text-xl text-gray-300 mt-4">Uma análise sobre a tecnologia, o modelo de negócio e os desafios na criação de um novo paradigma para o transporte urbano.</p>
+                    <p class="text-lg md:text-xl text-blue-200 font-semibold">Seminário: Indústria da Aviação no Brasil</p>
+                    <h2 class="text-4xl md:text-5xl font-extrabold my-4">Eve Air Mobility e o Futuro da Mobilidade Aérea Urbana</h2>
+                    <p class="text-base md:text-lg text-gray-300 mt-4">Uma análise sobre a tecnologia, o modelo de negócio e os desafios na criação de um novo paradigma para o transporte urbano.</p>
                 </div>
             </section>
 
             <!-- Container Principal -->
-            <div class="container mx-auto px-6 py-12 md:py-20">
+            <div class="container mx-auto px-4 sm:px-6 py-12 md:py-20">
 
                 <!-- Contexto: O Desafio da Mobilidade Urbana -->
-                <section id="contexto" class="scroll-mt-20 mb-20">
+                <section id="contexto" class="scroll-mt-20 mb-16 md:mb-20">
                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">O Desafio da Mobilidade Urbana</h3>
                     <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">As cidades modernas enfrentam uma crise de mobilidade, marcada por três problemas centrais que exigem soluções inovadoras.</p>
                     <div class="grid md:grid-cols-3 gap-8">
@@ -96,8 +95,8 @@
                 </section>
 
                 <!-- A Solução: Eve Air Mobility -->
-                <section id="solucao" class="scroll-mt-20 mb-20 bg-white p-8 md:p-12 rounded-xl shadow-lg">
-                    <div class="flex flex-col md:flex-row items-center gap-12">
+                <section id="solucao" class="scroll-mt-20 mb-16 md:mb-20 bg-white p-6 md:p-12 rounded-xl shadow-lg">
+                    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                         <div class="md:w-1/2">
                             <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Apresentando a Eve: Uma Solução Integrada</h3>
                             <div class="text-lg space-y-4 text-gray-700">
@@ -114,7 +113,7 @@
                 </section>
                 
                 <!-- O que é eVTOL -->
-                <section id="o-que-e-evtol" class="scroll-mt-20 mb-20">
+                <section id="o-que-e-evtol" class="scroll-mt-20 mb-16 md:mb-20">
                     <div class="text-center">
                         <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Desmistificando os eVTOLs</h3>
                         <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto">
@@ -138,9 +137,9 @@
                 </section>
 
                 <!-- A Tecnologia: A Aeronave eVTOL da Eve -->
-                <section id="tecnologia-eve" class="scroll-mt-20 mb-20">
+                <section id="tecnologia-eve" class="scroll-mt-20 mb-16 md:mb-20">
                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">A Tecnologia do eVTOL da Eve</h3>
-                    <div class="flex flex-col-reverse md:flex-row items-center gap-12 bg-gray-800 text-white p-8 md:p-12 rounded-xl shadow-lg">
+                    <div class="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 bg-gray-800 text-white p-6 md:p-12 rounded-xl shadow-lg">
                         <div class="md:w-1/2">
                             <img src="https://mundogeo.com/wp-content/uploads/2024/05/08125213/evtol-eve-prototipo-divulgacao.jpg" 
                              alt="[Imagem do protótipo do eVTOL da Eve em escala real]" 
@@ -159,57 +158,14 @@
                     </div>
                 </section>
                 
-                <!-- O Ecossistema UAM -->
-                <section id="ecossistema" class="scroll-mt-20 mb-20 text-center">
-                    <h3 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Mais que uma Aeronave: Um Ecossistema Completo</h3>
-                    <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">A estratégia da Eve se baseia em três pilares integrados para garantir a viabilidade e a escalabilidade da Mobilidade Aérea Urbana.</p>
-                     <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-white p-8 rounded-xl shadow-md text-left">
-                            <h4 class="font-bold text-xl text-blue-700 mb-2">1. O eVTOL</h4>
-                            <p>O veículo elétrico de decolagem e pouso vertical que forma a base do sistema.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-xl shadow-md text-left">
-                            <h4 class="font-bold text-xl text-teal-700 mb-2">2. Serviços & Suporte</h4>
-                            <p>Rede global para manutenção, treinamento e operações, garantindo a segurança e disponibilidade da frota.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-xl shadow-md text-left">
-                            <h4 class="font-bold text-xl text-purple-700 mb-2">3. Gestão de Tráfego (UATM)</h4>
-                            <p>Software para orquestrar o tráfego aéreo urbano de forma segura e otimizada.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Desafios e Considerações Futuras -->
-                <section id="desafios" class="scroll-mt-20 mb-20 bg-white p-8 md:p-12 rounded-xl shadow-lg">
-                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Desafios e Considerações Futuras</h3>
-                     <div class="grid md:grid-cols-2 gap-8 text-lg">
-                        <div>
-                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Certificação Regulatória</h4>
-                            <p class="text-gray-600">Obter aprovação de agências como ANAC, FAA e EASA é o marco mais crítico e complexo para o início das operações.</p>
-                        </div>
-                         <div>
-                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Infraestrutura (Vertipontos)</h4>
-                            <p class="text-gray-600">A construção de locais para decolagem/pouso requer grandes investimentos e integração ao planejamento urbano.</p>
-                        </div>
-                         <div>
-                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Aceitação Pública</h4>
-                            <p class="text-gray-600">Garantir a confiança da sociedade na segurança e nos benefícios do novo modal é crucial para sua adoção em massa.</p>
-                        </div>
-                         <div>
-                            <h4 class="font-semibold text-xl text-gray-800 mb-2">Escalabilidade da Bateria</h4>
-                            <p class="text-gray-600">A evolução da densidade energética das baterias é determinante para aumentar o alcance e a viabilidade das aeronaves.</p>
-                        </div>
-                     </div>
-                </section>
-
                 <!-- Ponto de Aprofundamento -->
-                <section id="aprofundamento" class="scroll-mt-20 mb-20">
+                <section id="aprofundamento" class="scroll-mt-20 mb-16 md:mb-20">
                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-4">Ponto de Aprofundamento: Tecnologias de Bateria</h3>
                     <p class="text-lg text-center text-gray-600 max-w-3xl mx-auto mb-12">A pesquisa para voos urbanos acelera inovações que transcendem a aviação, aprimorando tecnologias que já usamos ou que em breve farão parte da nossa rotina.</p>
                     
-                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                    <div class="bg-white p-6 md:p-12 rounded-xl shadow-lg">
                         <h4 class="font-bold text-2xl text-blue-700 mb-6">1. Baterias e Gestão de Energia</h4>
-                        <div class="flex flex-col md:flex-row items-center gap-12">
+                        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                             <div class="md:w-1/2 text-lg space-y-4 text-gray-700">
                                  <div>
                                     <h5 class="font-semibold text-xl text-gray-800 mb-2">Tecnologia Avançada</h5>
@@ -229,7 +185,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mt-8">
+                    <div class="bg-white p-6 md:p-12 rounded-xl shadow-lg mt-8">
                         <h4 class="font-bold text-2xl text-blue-700 mb-6">2. Impacto Ambiental e o Ciclo Completo</h4>
                         <div class="text-lg space-y-4 text-gray-700">
                             <p>A transição para a eletrificação é fundamental para um futuro sustentável, mas é crucial analisar o ciclo de vida completo da tecnologia para entender seu verdadeiro impacto ambiental.</p>
@@ -252,9 +208,9 @@
                         </div>
                     </div>
                     
-                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg mt-8">
+                    <div class="bg-white p-6 md:p-12 rounded-xl shadow-lg mt-8">
                         <h4 class="font-bold text-2xl text-blue-700 mb-6">3. Uma Possível Solução: Baterias de Sódio</h4>
-                        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
                             <div class="md:w-1/2">
                                 <img src="https://cdn.motor1.com/images/mgl/9o8B1/s3/le-batterie-agli-ioni-di-sodio-studiate-all-universita-di-warwick.webp" 
                                  alt="[Imagem de células de bateria de íon de sódio]" 
@@ -271,11 +227,10 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
                 
                 <!-- Conclusões -->
-                <section id="conclusoes" class="scroll-mt-20 mb-20 bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <section id="conclusoes" class="scroll-mt-20 mb-16 md:mb-20 bg-white p-6 md:p-12 rounded-xl shadow-lg">
                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Conclusões</h3>
                     <div class="text-lg space-y-4 text-gray-700 max-w-4xl mx-auto">
                         <p>A Eve Air Mobility, com o forte apoio da Embraer, destaca-se como uma das líderes na transformação do transporte aéreo nas cidades. O seu grande diferencial é pensar em tudo: não apenas na aeronave, mas em toda a operação, no suporte e na gestão do tráfego. Essa visão completa é a sua principal vantagem para superar os desafios do setor.</p>
@@ -285,12 +240,12 @@
                 </section>
 
                 <!-- Referências -->
-                <section id="referencias" class="scroll-mt-20 mb-20">
+                <section id="referencias" class="scroll-mt-20 mb-16 md:mb-20">
                     <h3 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Referências Bibliográficas</h3>
-                    <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg text-gray-700 text-sm max-w-4xl mx-auto space-y-3">
-                        <p>ATAÍDE, Márcio Rogério de. <strong>Baterias de íons-lítio</strong>: uma revisão sobre os processos de fabricação e os novos conceitos para o reuso e a reciclagem. 2021. Dissertação (Mestrado em Engenharia Mecânica) - Universidade Federal de Uberlândia, Uberlândia, 2021. Disponível em: <a href="https://www.proquest.com/openview/631bac60f1d2056c4729d5fe9783228a/1?pq-origsite=gscholar&cbl=2026366&diss=y" class="text-blue-600 hover:underline" target="_blank">https://www.proquest.com/openview/631bac60f1d2056c4729d5fe9783228a/1?pq-origsite=gscholar&cbl=2026366&diss=y</a>. Acesso em: 17 jun. 2025.</p>
-                        <p>EVE AIR MOBILITY. <a href="https://www.eveairmobility.com" class="text-blue-600 hover:underline" target="_blank">https://www.eveairmobility.com</a>. Acesso em: 17 jun. 2025.</p>
-                        <p>SANTOS, J. S. et al. Baterias de íons de sódio: uma alternativa às baterias de íons de lítio. In: <strong>Tecnologias de inovação e suas aplicações</strong>. Guarujá: Editora Scienza, 2021. p. 110-120. Disponível em: <a href="https://editorascienza.com.br/pdfs/pti/livro_tecnologias.pdf" class="text-blue-600 hover:underline" target="_blank">https://editorascienza.com.br/pdfs/pti/livro_tecnologias.pdf</a>. Acesso em: 17 jun. 2025.</p>
+                    <div class="bg-white p-6 md:p-12 rounded-xl shadow-lg text-gray-700 text-sm max-w-4xl mx-auto space-y-4">
+                        <p class="break-words">ATAÍDE, Márcio Rogério de. <strong>Baterias de íons-lítio</strong>: uma revisão sobre os processos de fabricação e os novos conceitos para o reuso e a reciclagem. 2021. Dissertação (Mestrado em Engenharia Mecânica) - Universidade Federal de Uberlândia, Uberlândia, 2021. Disponível em: <a href="https://www.proquest.com/openview/631bac60f1d2056c4729d5fe9783228a/1?pq-origsite=gscholar&cbl=2026366&diss=y" class="text-blue-600 hover:underline break-all" target="_blank">https://www.proquest.com/openview/631bac60f1d2056c4729d5fe9783228a/1?pq-origsite=gscholar&cbl=2026366&diss=y</a>. Acesso em: 17 jun. 2025.</p>
+                        <p class="break-words">EVE AIR MOBILITY. <a href="https://www.eveairmobility.com" class="text-blue-600 hover:underline break-all" target="_blank">https://www.eveairmobility.com</a>. Acesso em: 17 jun. 2025.</p>
+                        <p class="break-words">SANTOS, J. S. et al. Baterias de íons de sódio: uma alternativa às baterias de íons de lítio. In: <strong>Tecnologias de inovação e suas aplicações</strong>. Guarujá: Editora Scienza, 2021. p. 110-120. Disponível em: <a href="https://editorascienza.com.br/pdfs/pti/livro_tecnologias.pdf" class="text-blue-600 hover:underline break-all" target="_blank">https://editorascienza.com.br/pdfs/pti/livro_tecnologias.pdf</a>. Acesso em: 17 jun. 2025.</p>
                     </div>
                 </section>
 
